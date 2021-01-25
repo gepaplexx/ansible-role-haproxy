@@ -1,7 +1,6 @@
-## haproxy
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ckaserer/ansible-role-haproxy/CI?style=flat-square)](https://github.com/ckaserer/ansible-role-haproxy/actions?query=workflow%3ACI) ![bsd](https://img.shields.io/badge/license-MIT-%20brightgreen.svg?style=flat-square) ![Maintenance](https://img.shields.io/maintenance/yes/2021?style=flat-square)
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-haproxy.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-haproxy)
-[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-haproxy-blue.svg)](https://galaxy.ansible.com/Oefenweb/haproxy)
+# ckaserer.haproxy 
 
 Set up (the latest version of) [HAProxy](http://www.haproxy.org/) in Ubuntu systems.
 
@@ -762,10 +761,7 @@ You can either copy and modify the provided template, or extend it with [Jinja2 
 
 MIT
 
-#### Author Information
+### Contributors
 
-Mischa ter Smitten (based on work of [FloeDesignTechnologies](https://github.com/FloeDesignTechnologies))
-
-#### Feedback, bug-reports, requests, ...
-
-Are [welcome](https://github.com/Oefenweb/ansible-haproxy/issues)!
+- [ckaserer](https://github.com/ckaserer) (maintainer)
+- Mischa ter Smitten (based on work of [FloeDesignTechnologies](https://github.com/FloeDesignTechnologies))
