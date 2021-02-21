@@ -1,4 +1,4 @@
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ckaserer/ansible-role-haproxy/CI?style=flat-square)](https://github.com/ckaserer/ansible-role-haproxy/actions?query=workflow%3ACI) ![bsd](https://img.shields.io/badge/license-MIT-%20brightgreen.svg?style=flat-square) ![Maintenance](https://img.shields.io/maintenance/yes/2021?style=flat-square)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ckaserer/ansible-role-haproxy/CI?style=flat-square)](https://github.com/ckaserer/ansible-role-haproxy/actions?query=workflow%3ACI) ![mit](https://img.shields.io/badge/license-MIT-%20brightgreen.svg?style=flat-square) ![Maintenance](https://img.shields.io/maintenance/yes/2021?style=flat-square)
 
 # ckaserer.haproxy 
 
