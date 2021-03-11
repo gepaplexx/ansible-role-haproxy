@@ -1,6 +1,6 @@
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ckaserer/ansible-role-haproxy/CI?style=flat-square)](https://github.com/ckaserer/ansible-role-haproxy/actions?query=workflow%3ACI) ![mit](https://img.shields.io/badge/license-MIT-%20brightgreen.svg?style=flat-square) ![Maintenance](https://img.shields.io/maintenance/yes/2021?style=flat-square)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/gepaplexx/ansible-role-haproxy/CI?style=flat-square)](https://github.com/gepaplexx/ansible-role-haproxy/actions?query=workflow%3ACI) ![mit](https://img.shields.io/badge/license-MIT-%20brightgreen.svg?style=flat-square) ![Maintenance](https://img.shields.io/maintenance/yes/2021?style=flat-square)
 
-# ckaserer.haproxy 
+# gepaplexx.haproxy 
 
 Set up (the latest version of) [HAProxy](http://www.haproxy.org/) in Ubuntu systems.
 
