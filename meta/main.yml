@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: haproxy
-  author: Mischa ter Smitten, ckaserer
+  author: Mischa ter Smitten, ckaserer, gepaplexx
   namespace: gepaplexx
   description: Set up the latest version of HAProxy in Ubuntu systems
   license: MIT
