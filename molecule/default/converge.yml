@@ -1,6 +1,6 @@
 ---
 - name: Converge
-  hosts: all
+  hosts: instance
   pre_tasks:
     - name: Update Cache
       apt:
@@ -9,7 +9,7 @@
   tasks:
     - name: "Include ansible role"
       include_role:
-        name: "ckaserer.haproxy"
+        name: "gepaplexx.haproxy"
       vars:
         network_ip: "10.0.0"                      # easy to change network ip if it is a class c network
         
@@ -1075,943 +1075,943 @@
               - dontlog-normal
             balance: source
             server:
-              - name: k8s-worker-http-20
+              - name: k8s-worker-https-20
                 listen: "{{ network_ip }}.20:443"
                 param:
                   - check
-              - name: k8s-worker-http-21
+              - name: k8s-worker-https-21
                 listen: "{{ network_ip }}.21:443"
                 param:
                   - check
-              - name: k8s-worker-http-22
+              - name: k8s-worker-https-22
                 listen: "{{ network_ip }}.22:443"
                 param:
                   - check
-              - name: k8s-worker-http-23
+              - name: k8s-worker-https-23
                 listen: "{{ network_ip }}.23:443"
                 param:
                   - check
-              - name: k8s-worker-http-24
+              - name: k8s-worker-https-24
                 listen: "{{ network_ip }}.24:443"
                 param:
                   - check
-              - name: k8s-worker-http-25
+              - name: k8s-worker-https-25
                 listen: "{{ network_ip }}.25:443"
                 param:
                   - check
-              - name: k8s-worker-http-26
+              - name: k8s-worker-https-26
                 listen: "{{ network_ip }}.26:443"
                 param:
                   - check
-              - name: k8s-worker-http-27
+              - name: k8s-worker-https-27
                 listen: "{{ network_ip }}.27:443"
                 param:
                   - check
-              - name: k8s-worker-http-28
+              - name: k8s-worker-https-28
                 listen: "{{ network_ip }}.28:443"
                 param:
                   - check
-              - name: k8s-worker-http-29
+              - name: k8s-worker-https-29
                 listen: "{{ network_ip }}.29:443"
                 param:
                   - check
-              - name: k8s-worker-http-30
+              - name: k8s-worker-https-30
                 listen: "{{ network_ip }}.30:443"
                 param:
                   - check
-              - name: k8s-worker-http-31
+              - name: k8s-worker-https-31
                 listen: "{{ network_ip }}.31:443"
                 param:
                   - check
-              - name: k8s-worker-http-32
+              - name: k8s-worker-https-32
                 listen: "{{ network_ip }}.32:443"
                 param:
                   - check
-              - name: k8s-worker-http-33
+              - name: k8s-worker-https-33
                 listen: "{{ network_ip }}.33:443"
                 param:
                   - check
-              - name: k8s-worker-http-34
+              - name: k8s-worker-https-34
                 listen: "{{ network_ip }}.34:443"
                 param:
                   - check
-              - name: k8s-worker-http-35
+              - name: k8s-worker-https-35
                 listen: "{{ network_ip }}.35:443"
                 param:
                   - check
-              - name: k8s-worker-http-36
+              - name: k8s-worker-https-36
                 listen: "{{ network_ip }}.36:443"
                 param:
                   - check
-              - name: k8s-worker-http-37
+              - name: k8s-worker-https-37
                 listen: "{{ network_ip }}.37:443"
                 param:
                   - check
-              - name: k8s-worker-http-38
+              - name: k8s-worker-https-38
                 listen: "{{ network_ip }}.38:443"
                 param:
                   - check
-              - name: k8s-worker-http-39
+              - name: k8s-worker-https-39
                 listen: "{{ network_ip }}.39:443"
                 param:
                   - check
-              - name: k8s-worker-http-40
+              - name: k8s-worker-https-40
                 listen: "{{ network_ip }}.40:443"
                 param:
                   - check
-              - name: k8s-worker-http-41
+              - name: k8s-worker-https-41
                 listen: "{{ network_ip }}.41:443"
                 param:
                   - check
-              - name: k8s-worker-http-42
+              - name: k8s-worker-https-42
                 listen: "{{ network_ip }}.42:443"
                 param:
                   - check
-              - name: k8s-worker-http-43
+              - name: k8s-worker-https-43
                 listen: "{{ network_ip }}.43:443"
                 param:
                   - check
-              - name: k8s-worker-http-44
+              - name: k8s-worker-https-44
                 listen: "{{ network_ip }}.44:443"
                 param:
                   - check
-              - name: k8s-worker-http-45
+              - name: k8s-worker-https-45
                 listen: "{{ network_ip }}.45:443"
                 param:
                   - check
-              - name: k8s-worker-http-46
+              - name: k8s-worker-https-46
                 listen: "{{ network_ip }}.46:443"
                 param:
                   - check
-              - name: k8s-worker-http-47
+              - name: k8s-worker-https-47
                 listen: "{{ network_ip }}.47:443"
                 param:
                   - check
-              - name: k8s-worker-http-48
+              - name: k8s-worker-https-48
                 listen: "{{ network_ip }}.48:443"
                 param:
                   - check
-              - name: k8s-worker-http-49
+              - name: k8s-worker-https-49
                 listen: "{{ network_ip }}.49:443"
                 param:
                   - check
-              - name: k8s-worker-http-50
+              - name: k8s-worker-https-50
                 listen: "{{ network_ip }}.50:443"
                 param:
                   - check
-              - name: k8s-worker-http-51
+              - name: k8s-worker-https-51
                 listen: "{{ network_ip }}.51:443"
                 param:
                   - check
-              - name: k8s-worker-http-52
+              - name: k8s-worker-https-52
                 listen: "{{ network_ip }}.52:443"
                 param:
                   - check
-              - name: k8s-worker-http-53
+              - name: k8s-worker-https-53
                 listen: "{{ network_ip }}.53:443"
                 param:
                   - check
-              - name: k8s-worker-http-54
+              - name: k8s-worker-https-54
                 listen: "{{ network_ip }}.54:443"
                 param:
                   - check
-              - name: k8s-worker-http-55
+              - name: k8s-worker-https-55
                 listen: "{{ network_ip }}.55:443"
                 param:
                   - check
-              - name: k8s-worker-http-56
+              - name: k8s-worker-https-56
                 listen: "{{ network_ip }}.56:443"
                 param:
                   - check
-              - name: k8s-worker-http-57
+              - name: k8s-worker-https-57
                 listen: "{{ network_ip }}.57:443"
                 param:
                   - check
-              - name: k8s-worker-http-58
+              - name: k8s-worker-https-58
                 listen: "{{ network_ip }}.58:443"
                 param:
                   - check
-              - name: k8s-worker-http-59
+              - name: k8s-worker-https-59
                 listen: "{{ network_ip }}.59:443"
                 param:
                   - check
-              - name: k8s-worker-http-60
+              - name: k8s-worker-https-60
                 listen: "{{ network_ip }}.60:443"
                 param:
                   - check
-              - name: k8s-worker-http-61
+              - name: k8s-worker-https-61
                 listen: "{{ network_ip }}.61:443"
                 param:
                   - check
-              - name: k8s-worker-http-62
+              - name: k8s-worker-https-62
                 listen: "{{ network_ip }}.62:443"
                 param:
                   - check
-              - name: k8s-worker-http-63
+              - name: k8s-worker-https-63
                 listen: "{{ network_ip }}.63:443"
                 param:
                   - check
-              - name: k8s-worker-http-64
+              - name: k8s-worker-https-64
                 listen: "{{ network_ip }}.64:443"
                 param:
                   - check
-              - name: k8s-worker-http-65
+              - name: k8s-worker-https-65
                 listen: "{{ network_ip }}.65:443"
                 param:
                   - check
-              - name: k8s-worker-http-66
+              - name: k8s-worker-https-66
                 listen: "{{ network_ip }}.66:443"
                 param:
                   - check
-              - name: k8s-worker-http-67
+              - name: k8s-worker-https-67
                 listen: "{{ network_ip }}.67:443"
                 param:
                   - check
-              - name: k8s-worker-http-68
+              - name: k8s-worker-https-68
                 listen: "{{ network_ip }}.68:443"
                 param:
                   - check
-              - name: k8s-worker-http-69
+              - name: k8s-worker-https-69
                 listen: "{{ network_ip }}.69:443"
                 param:
                   - check
-              - name: k8s-worker-http-70
+              - name: k8s-worker-https-70
                 listen: "{{ network_ip }}.70:443"
                 param:
                   - check
-              - name: k8s-worker-http-71
+              - name: k8s-worker-https-71
                 listen: "{{ network_ip }}.71:443"
                 param:
                   - check
-              - name: k8s-worker-http-72
+              - name: k8s-worker-https-72
                 listen: "{{ network_ip }}.72:443"
                 param:
                   - check
-              - name: k8s-worker-http-73
+              - name: k8s-worker-https-73
                 listen: "{{ network_ip }}.73:443"
                 param:
                   - check
-              - name: k8s-worker-http-74
+              - name: k8s-worker-https-74
                 listen: "{{ network_ip }}.74:443"
                 param:
                   - check
-              - name: k8s-worker-http-75
+              - name: k8s-worker-https-75
                 listen: "{{ network_ip }}.75:443"
                 param:
                   - check
-              - name: k8s-worker-http-76
+              - name: k8s-worker-https-76
                 listen: "{{ network_ip }}.76:443"
                 param:
                   - check
-              - name: k8s-worker-http-77
+              - name: k8s-worker-https-77
                 listen: "{{ network_ip }}.77:443"
                 param:
                   - check
-              - name: k8s-worker-http-78
+              - name: k8s-worker-https-78
                 listen: "{{ network_ip }}.78:443"
                 param:
                   - check
-              - name: k8s-worker-http-79
+              - name: k8s-worker-https-79
                 listen: "{{ network_ip }}.79:443"
                 param:
                   - check
-              - name: k8s-worker-http-80
+              - name: k8s-worker-https-80
                 listen: "{{ network_ip }}.80:443"
                 param:
                   - check
-              - name: k8s-worker-http-81
+              - name: k8s-worker-https-81
                 listen: "{{ network_ip }}.81:443"
                 param:
                   - check
-              - name: k8s-worker-http-82
+              - name: k8s-worker-https-82
                 listen: "{{ network_ip }}.82:443"
                 param:
                   - check
-              - name: k8s-worker-http-83
+              - name: k8s-worker-https-83
                 listen: "{{ network_ip }}.83:443"
                 param:
                   - check
-              - name: k8s-worker-http-84
+              - name: k8s-worker-https-84
                 listen: "{{ network_ip }}.84:443"
                 param:
                   - check
-              - name: k8s-worker-http-85
+              - name: k8s-worker-https-85
                 listen: "{{ network_ip }}.85:443"
                 param:
                   - check
-              - name: k8s-worker-http-86
+              - name: k8s-worker-https-86
                 listen: "{{ network_ip }}.86:443"
                 param:
                   - check
-              - name: k8s-worker-http-87
+              - name: k8s-worker-https-87
                 listen: "{{ network_ip }}.87:443"
                 param:
                   - check
-              - name: k8s-worker-http-88
+              - name: k8s-worker-https-88
                 listen: "{{ network_ip }}.88:443"
                 param:
                   - check
-              - name: k8s-worker-http-89
+              - name: k8s-worker-https-89
                 listen: "{{ network_ip }}.89:443"
                 param:
                   - check
-              - name: k8s-worker-http-90
+              - name: k8s-worker-https-90
                 listen: "{{ network_ip }}.90:443"
                 param:
                   - check
-              - name: k8s-worker-http-91
+              - name: k8s-worker-https-91
                 listen: "{{ network_ip }}.91:443"
                 param:
                   - check
-              - name: k8s-worker-http-92
+              - name: k8s-worker-https-92
                 listen: "{{ network_ip }}.92:443"
                 param:
                   - check
-              - name: k8s-worker-http-93
+              - name: k8s-worker-https-93
                 listen: "{{ network_ip }}.93:443"
                 param:
                   - check
-              - name: k8s-worker-http-94
+              - name: k8s-worker-https-94
                 listen: "{{ network_ip }}.94:443"
                 param:
                   - check
-              - name: k8s-worker-http-95
+              - name: k8s-worker-https-95
                 listen: "{{ network_ip }}.95:443"
                 param:
                   - check
-              - name: k8s-worker-http-96
+              - name: k8s-worker-https-96
                 listen: "{{ network_ip }}.96:443"
                 param:
                   - check
-              - name: k8s-worker-http-97
+              - name: k8s-worker-https-97
                 listen: "{{ network_ip }}.97:443"
                 param:
                   - check
-              - name: k8s-worker-http-98
+              - name: k8s-worker-https-98
                 listen: "{{ network_ip }}.98:443"
                 param:
                   - check
-              - name: k8s-worker-http-99
+              - name: k8s-worker-https-99
                 listen: "{{ network_ip }}.99:443"
                 param:
                   - check
-              - name: k8s-worker-http-100
+              - name: k8s-worker-https-100
                 listen: "{{ network_ip }}.100:443"
                 param:
                   - check
-              - name: k8s-worker-http-101
+              - name: k8s-worker-https-101
                 listen: "{{ network_ip }}.101:443"
                 param:
                   - check
-              - name: k8s-worker-http-102
+              - name: k8s-worker-https-102
                 listen: "{{ network_ip }}.102:443"
                 param:
                   - check
-              - name: k8s-worker-http-103
+              - name: k8s-worker-https-103
                 listen: "{{ network_ip }}.103:443"
                 param:
                   - check
-              - name: k8s-worker-http-104
+              - name: k8s-worker-https-104
                 listen: "{{ network_ip }}.104:443"
                 param:
                   - check
-              - name: k8s-worker-http-105
+              - name: k8s-worker-https-105
                 listen: "{{ network_ip }}.105:443"
                 param:
                   - check
-              - name: k8s-worker-http-106
+              - name: k8s-worker-https-106
                 listen: "{{ network_ip }}.106:443"
                 param:
                   - check
-              - name: k8s-worker-http-107
+              - name: k8s-worker-https-107
                 listen: "{{ network_ip }}.107:443"
                 param:
                   - check
-              - name: k8s-worker-http-108
+              - name: k8s-worker-https-108
                 listen: "{{ network_ip }}.108:443"
                 param:
                   - check
-              - name: k8s-worker-http-109
+              - name: k8s-worker-https-109
                 listen: "{{ network_ip }}.109:443"
                 param:
                   - check
-              - name: k8s-worker-http-110
+              - name: k8s-worker-https-110
                 listen: "{{ network_ip }}.110:443"
                 param:
                   - check
-              - name: k8s-worker-http-111
+              - name: k8s-worker-https-111
                 listen: "{{ network_ip }}.111:443"
                 param:
                   - check
-              - name: k8s-worker-http-112
+              - name: k8s-worker-https-112
                 listen: "{{ network_ip }}.112:443"
                 param:
                   - check
-              - name: k8s-worker-http-113
+              - name: k8s-worker-https-113
                 listen: "{{ network_ip }}.113:443"
                 param:
                   - check
-              - name: k8s-worker-http-114
+              - name: k8s-worker-https-114
                 listen: "{{ network_ip }}.114:443"
                 param:
                   - check
-              - name: k8s-worker-http-115
+              - name: k8s-worker-https-115
                 listen: "{{ network_ip }}.115:443"
                 param:
                   - check
-              - name: k8s-worker-http-116
+              - name: k8s-worker-https-116
                 listen: "{{ network_ip }}.116:443"
                 param:
                   - check
-              - name: k8s-worker-http-117
+              - name: k8s-worker-https-117
                 listen: "{{ network_ip }}.117:443"
                 param:
                   - check
-              - name: k8s-worker-http-118
+              - name: k8s-worker-https-118
                 listen: "{{ network_ip }}.118:443"
                 param:
                   - check
-              - name: k8s-worker-http-119
+              - name: k8s-worker-https-119
                 listen: "{{ network_ip }}.119:443"
                 param:
                   - check
-              - name: k8s-worker-http-120
+              - name: k8s-worker-https-120
                 listen: "{{ network_ip }}.120:443"
                 param:
                   - check
-              - name: k8s-worker-http-121
+              - name: k8s-worker-https-121
                 listen: "{{ network_ip }}.121:443"
                 param:
                   - check
-              - name: k8s-worker-http-122
+              - name: k8s-worker-https-122
                 listen: "{{ network_ip }}.122:443"
                 param:
                   - check
-              - name: k8s-worker-http-123
+              - name: k8s-worker-https-123
                 listen: "{{ network_ip }}.123:443"
                 param:
                   - check
-              - name: k8s-worker-http-124
+              - name: k8s-worker-https-124
                 listen: "{{ network_ip }}.124:443"
                 param:
                   - check
-              - name: k8s-worker-http-125
+              - name: k8s-worker-https-125
                 listen: "{{ network_ip }}.125:443"
                 param:
                   - check
-              - name: k8s-worker-http-126
+              - name: k8s-worker-https-126
                 listen: "{{ network_ip }}.126:443"
                 param:
                   - check
-              - name: k8s-worker-http-127
+              - name: k8s-worker-https-127
                 listen: "{{ network_ip }}.127:443"
                 param:
                   - check
-              - name: k8s-worker-http-128
+              - name: k8s-worker-https-128
                 listen: "{{ network_ip }}.128:443"
                 param:
                   - check
-              - name: k8s-worker-http-129
+              - name: k8s-worker-https-129
                 listen: "{{ network_ip }}.129:443"
                 param:
                   - check
-              - name: k8s-worker-http-130
+              - name: k8s-worker-https-130
                 listen: "{{ network_ip }}.130:443"
                 param:
                   - check
-              - name: k8s-worker-http-131
+              - name: k8s-worker-https-131
                 listen: "{{ network_ip }}.131:443"
                 param:
                   - check
-              - name: k8s-worker-http-132
+              - name: k8s-worker-https-132
                 listen: "{{ network_ip }}.132:443"
                 param:
                   - check
-              - name: k8s-worker-http-133
+              - name: k8s-worker-https-133
                 listen: "{{ network_ip }}.133:443"
                 param:
                   - check
-              - name: k8s-worker-http-134
+              - name: k8s-worker-httpss-134
                 listen: "{{ network_ip }}.134:443"
                 param:
                   - check
-              - name: k8s-worker-http-135
+              - name: k8s-worker-https-135
                 listen: "{{ network_ip }}.135:443"
                 param:
                   - check
-              - name: k8s-worker-http-136
+              - name: k8s-worker-https-136
                 listen: "{{ network_ip }}.136:443"
                 param:
                   - check
-              - name: k8s-worker-http-137
+              - name: k8s-worker-https-137
                 listen: "{{ network_ip }}.137:443"
                 param:
                   - check
-              - name: k8s-worker-http-138
+              - name: k8s-worker-https-138
                 listen: "{{ network_ip }}.138:443"
                 param:
                   - check
-              - name: k8s-worker-http-139
+              - name: k8s-worker-https-139
                 listen: "{{ network_ip }}.139:443"
                 param:
                   - check
-              - name: k8s-worker-http-140
+              - name: k8s-worker-https-140
                 listen: "{{ network_ip }}.140:443"
                 param:
                   - check
-              - name: k8s-worker-http-141
+              - name: k8s-worker-https-141
                 listen: "{{ network_ip }}.141:443"
                 param:
                   - check
-              - name: k8s-worker-http-142
+              - name: k8s-worker-https-142
                 listen: "{{ network_ip }}.142:443"
                 param:
                   - check
-              - name: k8s-worker-http-143
+              - name: k8s-worker-https-143
                 listen: "{{ network_ip }}.143:443"
                 param:
                   - check
-              - name: k8s-worker-http-144
+              - name: k8s-worker-https-144
                 listen: "{{ network_ip }}.144:443"
                 param:
                   - check
-              - name: k8s-worker-http-145
+              - name: k8s-worker-https-145
                 listen: "{{ network_ip }}.145:443"
                 param:
                   - check
-              - name: k8s-worker-http-146
+              - name: k8s-worker-https-146
                 listen: "{{ network_ip }}.146:443"
                 param:
                   - check
-              - name: k8s-worker-http-147
+              - name: k8s-worker-https-147
                 listen: "{{ network_ip }}.147:443"
                 param:
                   - check
-              - name: k8s-worker-http-148
+              - name: k8s-worker-https-148
                 listen: "{{ network_ip }}.148:443"
                 param:
                   - check
-              - name: k8s-worker-http-149
+              - name: k8s-worker-https-149
                 listen: "{{ network_ip }}.149:443"
                 param:
                   - check
-              - name: k8s-worker-http-150
+              - name: k8s-worker-https-150
                 listen: "{{ network_ip }}.150:443"
                 param:
                   - check
-              - name: k8s-worker-http-151
+              - name: k8s-worker-https-151
                 listen: "{{ network_ip }}.151:443"
                 param:
                   - check
-              - name: k8s-worker-http-152
+              - name: k8s-worker-https-152
                 listen: "{{ network_ip }}.152:443"
                 param:
                   - check
-              - name: k8s-worker-http-153
+              - name: k8s-worker-https-153
                 listen: "{{ network_ip }}.153:443"
                 param:
                   - check
-              - name: k8s-worker-http-154
+              - name: k8s-worker-https-154
                 listen: "{{ network_ip }}.154:443"
                 param:
                   - check
-              - name: k8s-worker-http-155
+              - name: k8s-worker-https-155
                 listen: "{{ network_ip }}.155:443"
                 param:
                   - check
-              - name: k8s-worker-http-156
+              - name: k8s-worker-https-156
                 listen: "{{ network_ip }}.156:443"
                 param:
                   - check
-              - name: k8s-worker-http-157
+              - name: k8s-worker-https-157
                 listen: "{{ network_ip }}.157:443"
                 param:
                   - check
-              - name: k8s-worker-http-158
+              - name: k8s-worker-https-158
                 listen: "{{ network_ip }}.158:443"
                 param:
                   - check
-              - name: k8s-worker-http-159
+              - name: k8s-worker-https-159
                 listen: "{{ network_ip }}.159:443"
                 param:
                   - check
-              - name: k8s-worker-http-160
+              - name: k8s-worker-https-160
                 listen: "{{ network_ip }}.160:443"
                 param:
                   - check
-              - name: k8s-worker-http-161
+              - name: k8s-worker-https-161
                 listen: "{{ network_ip }}.161:443"
                 param:
                   - check
-              - name: k8s-worker-http-162
+              - name: k8s-worker-https-162
                 listen: "{{ network_ip }}.162:443"
                 param:
                   - check
-              - name: k8s-worker-http-163
+              - name: k8s-worker-https-163
                 listen: "{{ network_ip }}.163:443"
                 param:
                   - check
-              - name: k8s-worker-http-164
+              - name: k8s-worker-https-164
                 listen: "{{ network_ip }}.164:443"
                 param:
                   - check
-              - name: k8s-worker-http-165
+              - name: k8s-worker-https-165
                 listen: "{{ network_ip }}.165:443"
                 param:
                   - check
-              - name: k8s-worker-http-166
+              - name: k8s-worker-https-166
                 listen: "{{ network_ip }}.166:443"
                 param:
                   - check
-              - name: k8s-worker-http-167
+              - name: k8s-worker-https-167
                 listen: "{{ network_ip }}.167:443"
                 param:
                   - check
-              - name: k8s-worker-http-168
+              - name: k8s-worker-https-168
                 listen: "{{ network_ip }}.168:443"
                 param:
                   - check
-              - name: k8s-worker-http-169
+              - name: k8s-worker-https-169
                 listen: "{{ network_ip }}.169:443"
                 param:
                   - check
-              - name: k8s-worker-http-170
+              - name: k8s-worker-https-170
                 listen: "{{ network_ip }}.170:443"
                 param:
                   - check
-              - name: k8s-worker-http-171
+              - name: k8s-worker-https-171
                 listen: "{{ network_ip }}.171:443"
                 param:
                   - check
-              - name: k8s-worker-http-172
+              - name: k8s-worker-https-172
                 listen: "{{ network_ip }}.172:443"
                 param:
                   - check
-              - name: k8s-worker-http-173
+              - name: k8s-worker-https-173
                 listen: "{{ network_ip }}.173:443"
                 param:
                   - check
-              - name: k8s-worker-http-174
+              - name: k8s-worker-https-174
                 listen: "{{ network_ip }}.174:443"
                 param:
                   - check
-              - name: k8s-worker-http-175
+              - name: k8s-worker-https-175
                 listen: "{{ network_ip }}.175:443"
                 param:
                   - check
-              - name: k8s-worker-http-176
+              - name: k8s-worker-https-176
                 listen: "{{ network_ip }}.176:443"
                 param:
                   - check
-              - name: k8s-worker-http-177
+              - name: k8s-worker-https-177
                 listen: "{{ network_ip }}.177:443"
                 param:
                   - check
-              - name: k8s-worker-http-178
+              - name: k8s-worker-https-178
                 listen: "{{ network_ip }}.178:443"
                 param:
                   - check
-              - name: k8s-worker-http-179
+              - name: k8s-worker-https-179
                 listen: "{{ network_ip }}.179:443"
                 param:
                   - check
-              - name: k8s-worker-http-180
+              - name: k8s-worker-https-180
                 listen: "{{ network_ip }}.180:443"
                 param:
                   - check
-              - name: k8s-worker-http-181
+              - name: k8s-worker-https-181
                 listen: "{{ network_ip }}.181:443"
                 param:
                   - check
-              - name: k8s-worker-http-182
+              - name: k8s-worker-https-182
                 listen: "{{ network_ip }}.182:443"
                 param:
                   - check
-              - name: k8s-worker-http-183
+              - name: k8s-worker-https-183
                 listen: "{{ network_ip }}.183:443"
                 param:
                   - check
-              - name: k8s-worker-http-184
+              - name: k8s-worker-https-184
                 listen: "{{ network_ip }}.184:443"
                 param:
                   - check
-              - name: k8s-worker-http-185
+              - name: k8s-worker-https-185
                 listen: "{{ network_ip }}.185:443"
                 param:
                   - check
-              - name: k8s-worker-http-186
+              - name: k8s-worker-https-186
                 listen: "{{ network_ip }}.186:443"
                 param:
                   - check
-              - name: k8s-worker-http-187
+              - name: k8s-worker-https-187
                 listen: "{{ network_ip }}.187:443"
                 param:
                   - check
-              - name: k8s-worker-http-188
+              - name: k8s-worker-https-188
                 listen: "{{ network_ip }}.188:443"
                 param:
                   - check
-              - name: k8s-worker-http-189
+              - name: k8s-worker-https-189
                 listen: "{{ network_ip }}.189:443"
                 param:
                   - check
-              - name: k8s-worker-http-190
+              - name: k8s-worker-https-190
                 listen: "{{ network_ip }}.190:443"
                 param:
                   - check
-              - name: k8s-worker-http-191
+              - name: k8s-worker-https-191
                 listen: "{{ network_ip }}.191:443"
                 param:
                   - check
-              - name: k8s-worker-http-192
+              - name: k8s-worker-https-192
                 listen: "{{ network_ip }}.192:443"
                 param:
                   - check
-              - name: k8s-worker-http-193
+              - name: k8s-worker-https-193
                 listen: "{{ network_ip }}.193:443"
                 param:
                   - check
-              - name: k8s-worker-http-194
+              - name: k8s-worker-https-194
                 listen: "{{ network_ip }}.194:443"
                 param:
                   - check
-              - name: k8s-worker-http-195
+              - name: k8s-worker-https-195
                 listen: "{{ network_ip }}.195:443"
                 param:
                   - check
-              - name: k8s-worker-http-196
+              - name: k8s-worker-https-196
                 listen: "{{ network_ip }}.196:443"
                 param:
                   - check
-              - name: k8s-worker-http-197
+              - name: k8s-worker-https-197
                 listen: "{{ network_ip }}.197:443"
                 param:
                   - check
-              - name: k8s-worker-http-198
+              - name: k8s-worker-https-198
                 listen: "{{ network_ip }}.198:443"
                 param:
                   - check
-              - name: k8s-worker-http-199
+              - name: k8s-worker-https-199
                 listen: "{{ network_ip }}.199:443"
                 param:
                   - check
-              - name: k8s-worker-http-200
+              - name: k8s-worker-https-200
                 listen: "{{ network_ip }}.200:443"
                 param:
                   - check
-              - name: k8s-worker-http-201
+              - name: k8s-worker-https-201
                 listen: "{{ network_ip }}.201:443"
                 param:
                   - check
-              - name: k8s-worker-http-202
+              - name: k8s-worker-https-202
                 listen: "{{ network_ip }}.202:443"
                 param:
                   - check
-              - name: k8s-worker-http-203
+              - name: k8s-worker-https-203
                 listen: "{{ network_ip }}.203:443"
                 param:
                   - check
-              - name: k8s-worker-http-204
+              - name: k8s-worker-https-204
                 listen: "{{ network_ip }}.204:443"
                 param:
                   - check
-              - name: k8s-worker-http-205
+              - name: k8s-worker-https-205
                 listen: "{{ network_ip }}.205:443"
                 param:
                   - check
-              - name: k8s-worker-http-206
+              - name: k8s-worker-https-206
                 listen: "{{ network_ip }}.206:443"
                 param:
                   - check
-              - name: k8s-worker-http-207
+              - name: k8s-worker-https-207
                 listen: "{{ network_ip }}.207:443"
                 param:
                   - check
-              - name: k8s-worker-http-208
+              - name: k8s-worker-https-208
                 listen: "{{ network_ip }}.208:443"
                 param:
                   - check
-              - name: k8s-worker-http-209
+              - name: k8s-worker-https-209
                 listen: "{{ network_ip }}.209:443"
                 param:
                   - check
-              - name: k8s-worker-http-210
+              - name: k8s-worker-https-210
                 listen: "{{ network_ip }}.210:443"
                 param:
                   - check
-              - name: k8s-worker-http-211
+              - name: k8s-worker-https-211
                 listen: "{{ network_ip }}.211:443"
                 param:
                   - check
-              - name: k8s-worker-http-212
+              - name: k8s-worker-https-212
                 listen: "{{ network_ip }}.212:443"
                 param:
                   - check
-              - name: k8s-worker-http-213
+              - name: k8s-worker-https-213
                 listen: "{{ network_ip }}.213:443"
                 param:
                   - check
-              - name: k8s-worker-http-214
+              - name: k8s-worker-https-214
                 listen: "{{ network_ip }}.214:443"
                 param:
                   - check
-              - name: k8s-worker-http-215
+              - name: k8s-worker-https-215
                 listen: "{{ network_ip }}.215:443"
                 param:
                   - check
-              - name: k8s-worker-http-216
+              - name: k8s-worker-https-216
                 listen: "{{ network_ip }}.216:443"
                 param:
                   - check
-              - name: k8s-worker-http-217
+              - name: k8s-worker-https-217
                 listen: "{{ network_ip }}.217:443"
                 param:
                   - check
-              - name: k8s-worker-http-218
+              - name: k8s-worker-https-218
                 listen: "{{ network_ip }}.218:443"
                 param:
                   - check
-              - name: k8s-worker-http-219
+              - name: k8s-worker-https-219
                 listen: "{{ network_ip }}.219:443"
                 param:
                   - check
-              - name: k8s-worker-http-220
+              - name: k8s-worker-https-220
                 listen: "{{ network_ip }}.220:443"
                 param:
                   - check
-              - name: k8s-worker-http-221
+              - name: k8s-worker-https-221
                 listen: "{{ network_ip }}.221:443"
                 param:
                   - check
-              - name: k8s-worker-http-222
+              - name: k8s-worker-https-222
                 listen: "{{ network_ip }}.222:443"
                 param:
                   - check
-              - name: k8s-worker-http-223
+              - name: k8s-worker-https-223
                 listen: "{{ network_ip }}.223:443"
                 param:
                   - check
-              - name: k8s-worker-http-224
+              - name: k8s-worker-https-224
                 listen: "{{ network_ip }}.224:443"
                 param:
                   - check
-              - name: k8s-worker-http-225
+              - name: k8s-worker-https-225
                 listen: "{{ network_ip }}.225:443"
                 param:
                   - check
-              - name: k8s-worker-http-226
+              - name: k8s-worker-https-226
                 listen: "{{ network_ip }}.226:443"
                 param:
                   - check
-              - name: k8s-worker-http-227
+              - name: k8s-worker-https-227
                 listen: "{{ network_ip }}.227:443"
                 param:
                   - check
-              - name: k8s-worker-http-228
+              - name: k8s-worker-https-228
                 listen: "{{ network_ip }}.228:443"
                 param:
                   - check
-              - name: k8s-worker-http-229
+              - name: k8s-worker-https-229
                 listen: "{{ network_ip }}.229:443"
                 param:
                   - check
-              - name: k8s-worker-http-230
+              - name: k8s-worker-https-230
                 listen: "{{ network_ip }}.230:443"
                 param:
                   - check
-              - name: k8s-worker-http-231
+              - name: k8s-worker-https-231
                 listen: "{{ network_ip }}.231:443"
                 param:
                   - check
-              - name: k8s-worker-http-232
+              - name: k8s-worker-https-232
                 listen: "{{ network_ip }}.232:443"
                 param:
                   - check
-              - name: k8s-worker-http-233
+              - name: k8s-worker-https-233
                 listen: "{{ network_ip }}.233:443"
                 param:
                   - check
-              - name: k8s-worker-http-234
+              - name: k8s-worker-https-234
                 listen: "{{ network_ip }}.234:443"
                 param:
                   - check
-              - name: k8s-worker-http-235
+              - name: k8s-worker-https-235
                 listen: "{{ network_ip }}.235:443"
                 param:
                   - check
-              - name: k8s-worker-http-236
+              - name: k8s-worker-https-236
                 listen: "{{ network_ip }}.236:443"
                 param:
                   - check
-              - name: k8s-worker-http-237
+              - name: k8s-worker-https-237
                 listen: "{{ network_ip }}.237:443"
                 param:
                   - check
-              - name: k8s-worker-http-238
+              - name: k8s-worker-https-238
                 listen: "{{ network_ip }}.238:443"
                 param:
                   - check
-              - name: k8s-worker-http-239
+              - name: k8s-worker-https-239
                 listen: "{{ network_ip }}.239:443"
                 param:
                   - check
-              - name: k8s-worker-http-240
+              - name: k8s-worker-https-240
                 listen: "{{ network_ip }}.240:443"
                 param:
                   - check
-              - name: k8s-worker-http-241
+              - name: k8s-worker-https-241
                 listen: "{{ network_ip }}.241:443"
                 param:
                   - check
-              - name: k8s-worker-http-242
+              - name: k8s-worker-https-242
                 listen: "{{ network_ip }}.242:443"
                 param:
                   - check
-              - name: k8s-worker-http-243
+              - name: k8s-worker-https-243
                 listen: "{{ network_ip }}.243:443"
                 param:
                   - check
-              - name: k8s-worker-http-244
+              - name: k8s-worker-https-244
                 listen: "{{ network_ip }}.244:443"
                 param:
                   - check
-              - name: k8s-worker-http-245
+              - name: k8s-worker-https-245
                 listen: "{{ network_ip }}.245:443"
                 param:
                   - check
-              - name: k8s-worker-http-246
+              - name: k8s-worker-https-246
                 listen: "{{ network_ip }}.246:443"
                 param:
                   - check
-              - name: k8s-worker-http-247
+              - name: k8s-worker-https-247
                 listen: "{{ network_ip }}.247:443"
                 param:
                   - check
-              - name: k8s-worker-http-248
+              - name: k8s-worker-https-248
                 listen: "{{ network_ip }}.248:443"
                 param:
                   - check
-              - name: k8s-worker-http-249
+              - name: k8s-worker-https-249
                 listen: "{{ network_ip }}.249:443"
                 param:
                   - check
-              - name: k8s-worker-http-250
+              - name: k8s-worker-https-250
                 listen: "{{ network_ip }}.250:443"
                 param:
                   - check
-              - name: k8s-worker-http-251
+              - name: k8s-worker-https-251
                 listen: "{{ network_ip }}.251:443"
                 param:
                   - check
-              - name: k8s-worker-http-252
+              - name: k8s-worker-https-252
                 listen: "{{ network_ip }}.252:443"
                 param:
                   - check
-              - name: k8s-worker-http-253
+              - name: k8s-worker-https-253
                 listen: "{{ network_ip }}.253:443"
                 param:
                   - check
-              - name: k8s-worker-http-254
+              - name: k8s-worker-https-254
                 listen: "{{ network_ip }}.254:443"
                 param:
                   - check

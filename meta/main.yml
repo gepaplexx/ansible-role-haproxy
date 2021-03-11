@@ -2,6 +2,7 @@
 galaxy_info:
   role_name: haproxy
   author: Mischa ter Smitten, ckaserer
+  namespace: gepaplexx
   description: Set up the latest version of HAProxy in Ubuntu systems
   license: MIT
   min_ansible_version: 2.10

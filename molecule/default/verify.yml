@@ -1,6 +1,6 @@
 ---
 - name: Verify
-  hosts: all
+  hosts: instance
   become: true
   tasks:
     - name: Populate service facts
@@ -11,4 +11,51 @@
         that:
           - ansible_facts.services['haproxy.service'].state == "running"
           - ansible_facts.services['haproxy.service'].status == "enabled"
+
+    - name: Check if port 80 is open
+      wait_for:
+        host: "0.0.0.0"
+        port: "80"
+        state: started
+        delay: 0
+        timeout: 3
+
+    - name: Check if port 443 is open
+      wait_for:
+        host: "0.0.0.0"
+        port: "443"
+        state: started
+        delay: 0
+        timeout: 3
+
+    - name: Check if port 6443 is open
+      wait_for:
+        host: "0.0.0.0"
+        port: "6443"
+        state: started
+        delay: 0
+        timeout: 3
+
+    - name: Check if port 22623 is open
+      wait_for:
+        host: "0.0.0.0"
+        port: "22623"
+        state: started
+        delay: 0
+        timeout: 3
+
+    - name: Check if port 22 is closed
+      wait_for:
+        host: "0.0.0.0"
+        port: "22"
+        state: stopped
+        delay: 0
+        timeout: 3
+
+    - name: Test mit uri nginx welcome page
+      uri:
+        url: http://localhost
+        return_content: yes
+      register: this
+      failed_when: "'Welcome to nginx' not in this.content"
 ...
