@@ -3,5 +3,6 @@
   service:
     name: haproxy
     state: "{{ haproxy_restart_handler_state }}"
+    enabled: "{{ service_default_enabled | default(true) | bool }}"
   when: service_default_state | default('started') == 'started'
 ...

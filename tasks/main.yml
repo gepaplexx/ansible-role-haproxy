@@ -23,13 +23,4 @@
     - configuration
     - haproxy
     - haproxy-configuration
-
-- name: start and enable service
-  service:
-    name: haproxy
-    state: "{{ service_default_state | default('started') }}"
-    enabled: "{{ service_default_enabled | default(true) | bool }}"
-  tags:
-    - configuration
-    - haproxy
-    - haproxy-start-enable-service
+...
